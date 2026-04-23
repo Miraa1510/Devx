@@ -1,3 +1,19 @@
 spring:
   application:
     name: transactionservice
+
+
+  datasource:
+    url: jdbc:mysql://localhost:3307/Bankingsystem
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: validate
+    database-platform: org.hibernate.dialect.MySQLDialect
+
+server:
+  port: 8901
