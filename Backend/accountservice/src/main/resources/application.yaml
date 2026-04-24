@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: accountservice
+
+  datasource:
+    url: jdbc:mysql://localhost:3307/Bankingsystem
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: validate
+
+server:
+  port: 8902
+
+eureka:
+  client:
+    enabled: false

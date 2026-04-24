@@ -19,7 +19,7 @@ public class AccountController {
     }
 
     // ✅ Get all accounts
-    @GetMapping
+    @GetMapping("/all")
     public List<Account> getAllAccounts() {
         return accountService.getAllAccounts();
     }
